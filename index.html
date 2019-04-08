@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>DotProduct</title>
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="img/core-img/favicon.ico">
+
+    <!-- >>>>>>>>>>>>>>>> All CSS Files <<<<<<<<<<<<<<<< -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="../bootstrap-select/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+
+
+    <!--[if IE]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div id="preloader">
+        <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+    </div>
+    <!-- /.end preloader -->
+
+    <!-- >>>>>>>>>>>>>>>> Header Start <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <header class="header_area">
+        <!-- Header Area Start -->
+        <div class="main_header_area animated">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-2 col-xs-9">
+                        <!-- Logo Area -->
+                        <div class="logo_area">
+                            <a href="index.html"><img src="img/core-img/logo_small.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 col-xs-12">
+                        <!-- Menu Area Start -->
+                        <div class="main_menu_area">
+                            <div class="mainmenu">
+                                <nav>
+                                    <ul id="nav">
+                                        <li class="current_page_item"><a href="#home">Início</a></li>
+                                        <li><a href="#sobre">Sobre</a></li>
+                                        <li><a href="#projeto">Projeto</a></li>
+                                        <li><a href="#servicos">Serviços</a></li>                                                                                                                                                                
+                                        <li><a href="#contato">Contato</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <select class="selectpicker" data-width="fit">                                    
+                                    <option  data-content='<span class="flag-icon flag-icon-br"></span> Português'>Português</option>
+                                    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- >>>>>>>>>>>>>>>> Header End <<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>> Welcome Area Start <<<<<<<<<<<<<<<< -->
+    <section class="welcome_area" id="home">
+        <div class="welcome_slides">
+            <!-- Single Slide Start -->
+            <div class="single_slide" style="background-image: url(img/slider/opt.png);">
+                <div class="slide_text">
+                    <div class="table">
+                        <div class="table_cell">
+                            <h2 class="font-poiret-one"><span>Otimização</span></h2>
+                            <h3>Algoritmos de otimização podem ser usados para diminuir custos, aumentar a produtividade <br>e tornar a sua empresa mais eficiente.</h3>
+                            <!--<a class="btn btn-default btnslide" href="#otimizacao" role="button">saiba mais</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slide Start -->
+            <div class="single_slide" style="background-image: url(img/slider/stats.png);">
+                <div class="slide_text">
+                    <div class="table">
+                        <div class="table_cell">
+                            <h2 class="font-poiret-one">Estatística e <span>Aprendizagem Computacional</span></h2>
+                            <h3>Explore a sua base de dados através de software que aprende e prediz comportamento futuro.</h3>
+                            <!--<a class="btn btn-default btnslide" href="#estatistica" role="button">saiba mais</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slide Start -->
+            <div class="single_slide" style="background-image: url(img/slider/algo.png);">
+                <div class="slide_text">
+                    <div class="table">
+                        <div class="table_cell">
+                            <h2 class="font-poiret-one"><span>Algoritmos</span> Avançados</h2>
+                            <h3>De buscas em sua base de dados com texto incorreto/incompleto ao roteamento de caminhões de entrega, <br>há um algoritmo para encontrar a melhor solução.
+                            </h3>
+                            <!--<a class="btn btn-default btnslide" href="#algoritmos" role="button">saiba mais</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slide Start -->
+            <div class="single_slide" style="background-image: url(img/slider/rd.png);">
+                <div class="slide_text">
+                    <div class="table">
+                        <div class="table_cell">
+                            <h2 class="font-poiret-one">Pesquisa e <span>Desenvolvimento</span></h2>
+                            <h3>Apoiados em fortes bases teóricas, temos os cérebros para ajudá-lo através de soluções inovadoras.</h3>
+                            <!--<a class="btn btn-default btnslide" href="#pesquisa" role="button">saiba mais</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <!-- >>>>>>>>>>>>>>>>>> Welcome Area End <<<<<<<<<<<<<<<< -->
+
+    
+    <!-- >>>>>>>>>>>>>>>> About Us Area Start <<<<<<<<<<<<<<<< -->
+    <section class="about_area section_padding_100" id="sobre">
+        <div class="container">
+            <div class="about_us_area">
+                <div class="row">
+                    <!-- About Us Area -->
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about_us_thumb wow fadeInRight" data-wow-delay="0.2s">
+                            <img src="img/bg-pattern/company.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 wow fadeInUp">
+                        <!-- About Us Text Start -->
+                        <div class="about_us_text ">
+                            <h3>Sobre a empresa</h3>
+                            <p>
+                                Nossa empresa desenvolve soluções de software baseando-se em técnicas matemáticas, estatísticas, e computacionais para uma grande variedade de necessidades.
+                            </p>
+                            <p>
+                                Nossa empresa é formada por Engenheiros e PhDs, pessoas que conhecem e apreciam as ciências e também se divertem aplicando seu conhecimento teórico em soluções de software para problemas bastante concretos. Somos motivados por desafios e sabemos que cada projeto é único e nos traz novos conhecimentos e ideias.
+                            </p>
+                            <p>
+                                Nosso trabalho consiste em avaliar uma questão ou problema enfrentado por sua empresa, por exemplo, a otimização do consumo de matéria-prima. Utilizando princípios de pesquisa operacional, tentamos encaixar a questão em algum processo conhecido (não reinvente a roda!) e então elaboramos um protótipo para testes de validação. Uma vez que os testes demonstrem a viabilidade da solução, implementamos uma versão que automatiza o máximo possível das tarefas e permite ao cliente se concentrar naquilo que é mais importante em seu negócio, cabendo ao software desenvolvido se encaixar a empresa e não o contrário.
+                            </p>                            
+                            <a href="#contato" class="btn">Contato</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Awesome Feature Area End <<<<<<<<<<<<<<<< -->
+
+
+    <!-- >>>>>>>>>>>>>>>> Why Choose Us Area Start <<<<<<<<<<<<<<<< -->
+    <section class="gray_bg section_padding_100_70" id="projeto">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Section Heading Start -->
+                    <div class="section_heading">  
+                        <p>Iniciando um projeto</p>                      
+                        <h3>Geralmente um projeto começa a partir de uma questão bem simples, como as seguintes, para as quais já elaboramos soluções bem sucedidas:</h3>
+                    </div>
+                    <!-- Section Heading End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <!--  Why Choose Text Area Start  -->
+                    <div class="why_choose_us_text_area">
+                        <div class="single_choose_us">
+                            <h4>Itens e estoque</h4>
+                            <p>Quais itens e quanto devo comprar para manter em estoque?</p>
+                            <div class="choose_us_icon">
+                                <i class="icofont icofont-stock-mobile"></i>
+                            </div>
+                        </div>
+                        <div class="single_choose_us">
+                            <h4>Resposta instantânea</h4>
+                            <p>Quero que meu site permita buscar minha base de dados utilizando nomes cuja grafia pode ser diferente da digitada, e a resposta tem que ser instantânea!</p>
+                            <div class="choose_us_icon">
+                                <i class="icofont icofont-thunder-light"></i>
+                            </div>
+                        </div>
+                        <div class="single_choose_us">
+                            <h4>Detecção de fraudes</h4>
+                            <p>É possível identificar contas no meu sistema que provavelmente são fraudulentas somente analisando os dados do cadastro e faturamento?</p>
+                            <div class="choose_us_icon">
+                                <i class="icofont icofont-ssl-security"></i>
+                            </div>
+                        </div>
+                        <div class="single_choose_us">
+                                <h4>Minimizar custos</h4>
+                                <p>Como dimensionar um móvel para produção seriada de forma a minimizar a perda de matéria prima (chapas de MDF/algomerado)?</p>
+                                <div class="choose_us_icon">
+                                    <i class="icofont icofont-money-bag"></i>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--  Why Choose Image Area Start  -->
+                <div class="col-md-5 col-md-offset-2">
+                    <div class="why_choose_us_image about_us_thumb wow fadeInRight" data-wow-delay="0.2s">
+                        <img src="img/bg-pattern/project.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>> Why Choose Us Area Start <<<<<<<<<<<<<<<< -->
+
+    
+    
+
+    <!-- >>>>>>>>>>>>>>>> About Us Area Start <<<<<<<<<<<<<<<< -->
+    <section class="about_area section_padding_100" id="servicos">
+            <div class="container">
+                <div class="about_us_area">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Section Heading Start -->
+                            <div class="section_heading">                                                            
+                                <p>serviços</p>
+                                <h3>Um pouco do que fazemos</h3>  
+                            </div>
+                            <!-- Section Heading End -->
+                        </div>
+                    </div>
+
+                            
+                    <div class="row"  id="otimizacao">
+                        <!-- About Us Area -->
+                        <div class="col-xs-12 col-md-6">
+                            <div class="about_us_thumb wow fadeInRight" data-wow-delay="0.2s">
+                                <img src="img/bg-pattern/services/cutpattern.png" alt="">
+                                <p>
+                                    <strong>Esquema de corte</strong>                                
+                                    <br>
+                                    Menos de 1% de descarte de material.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="col-xs-12 col-md-6 wow fadeInUp">
+                            <!-- About Us Text Start -->
+                            <div class="about_us_text ">
+                                <h3><span>Otimização</span></h3>
+                                <p>A otimização consiste em minimizar ou maximizar uma função objetivo sujeito a restrições impostas pelo modelo. Muitas vezes a função objetivo é simplesmente o custo de produção de um item e as restrições se referem a condições impostas pelo processo de fabricação, disponibilidade de matéria prima entre outros fatores.</p>
+                                <p><strong>Nosso otimizador de corte</strong>
+                                </p>
+                                <p>Para obter cortes eficientes de chapas de MDF/algomerado são gerados diversos esquemas de corte, minimizando o custo total de material utilizado. Pode-se dispor de diversos tamanhos de chapa para que o algoritmo escolha quais chapas usar. A solução final é composta de diversos esquemas e suas respectivas quantidades de execução.</p>
+                                <p>Para computar as soluções são necessários diversos algoritmos de otimização. Há algoritmos especializados em gerar esquemas de corte eficientes e outros algoritmos, como <em>Simplex</em> e <em>Programação Genética</em>, utilizados para compor uma solução global através dos esquemas gerados individualmente.</p>
+                                <!--<a href="#" class="btn">Contato</a>-->
+                            </div>
+                        </div>
+    
+                    </div>
+                    <hr>
+                    <div class="row"   id="estatistica">
+                        <div class="col-xs-12 col-md-6 wow fadeInDown">
+                                <!-- About Us Text Start -->
+                                <div class="about_us_text ">
+                                    <h3><span>Estatística e Aprendizagem Computacional</span></h3>
+                                        <p>Métodos estatísticos obtém correlações entre dados, determinam quais são as variáveis mais importantes para explicar um fenômeno, extrapolam um modelo matemático a partir de amostras e muito mais. Técnicas de <em>Aprendizagem Computacional</em> permitem treinar softwares classificadores que analisam os dados e predizem o valor de uma variável depentente com excelente taxas de acerto.</p>
+                                        <p><strong>Detecção de contas fraudulentas</strong></p>
+                                        <p>Utilizando uma enorme base de dados onde uma fração das contas foi identificada como fraudulenta (manualmente ou através de outros métodos), treinamos um modelo de <em>Random Forests</em> para a classificação automática de registros suspeitos.</p>
+                                        <p>Este modelo consiste em uma coleção de árvores de decisão, sendo que cada uma analisa um subconjunto das variáveis e emite um voto ('conta suspeita' ou 'conta normal'). A decisão da <em>floresta</em> depende dos votos das árvores que a compõe (por exemplo, 2/3 dos votos são necessários para marcar a conta como suspeita automaticamente).</p>
+                                        <p>A floresta é obtida através de algoritmos que analisam uma amostra dos dados já classificados. A verificação da qualidade dos resultados é feita através de validação cruzada, ou seja, o classificador é testado em uma parte da amostra que não foi usada para treino e nesta parte da amostra ela deve exibir uma taxa de acerto bem alta.</p>
+                                </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="about_us_thumb wow fadeInLeft" data-wow-delay="0.2s">
+                                <img src="img/bg-pattern/services/tree.png" alt="">
+                                <p>
+                                    <strong>Árvore de decisão</strong>                                
+                                    <br>
+                                    Uma árvore pode ser usada para classificar dados fazendo uma série de questões do tipo Sim/Não até chegar a um nó folha (resultado da classificação).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>                    
+                    <div class="row"   id="algoritmos">
+                        <div class="col-xs-12 col-md-12">
+                                <div class="about_us_text ">
+                                        <h3><span>Algorítmos avançados</span></h3>
+                                        <p>Algoritmos são a essência do software. Seja para encontrar a menor rota que visita todos os pontos selecionados de um mapa ou para controlar um elevador num prédio de cem andares, uma solução algorítmica é necessária para evitar desperdícios e maximizar a eficiência.</p>
+                                        <br>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">                        
+                        <div class="col-xs-12 col-md-6">
+                            <div class="about_us_thumb wow fadeInRight" data-wow-delay="0.2s">
+                                <img src="img/bg-pattern/services/trie.png" alt="">
+                                <p>
+                                    <strong>Estrutura de dados <em>Trie</em></strong>                                
+                                    <br>
+                                    Uma forma de armazenar um dicionário de palavras para efetuar buscas de forma eficiente.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 wow fadeInUp">
+                                <!-- About Us Text Start -->
+                                <div class="about_us_text ">
+                                    <h3><span>Origens Africanas</span></h3>
+                                    <p>Implementamos o sistema de busca de nomes por aproximação no sítio <a class="normal" href="http://www.african-origins.com" target="_blank">African-Origins</a>. Os nomes africanos foram registrados por Europeus de forma inconsistente, sendo que a maioria dos nomes difere levemente da grafia atual. Utilizamos um índice na forma de um <em>trie</em> e desenvolvemos um algoritmo que rapidamente calcula uma distância baseada em alterações de grafia para ordenar nomes por proximidade em relação ao termo pesquisado.</p>
+                                    <p>Toda a solução foi pensada com alta performance em mente, sendo que na média leva-se menos de 30 milisegundos para encontrar os 100 nomes mais próximos do termo consultado, numa base de quase 100.000 registros (implementado na forma de um <em>web-service</em> programado em <em>Java</em>).</p>
+                                </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">                        
+                        <div class="col-xs-12 col-md-6">
+                            <div class="about_us_thumb wow fadeInRight" data-wow-delay="0.2s">
+                                <img src="img/bg-pattern/services/einstein.png" alt="">
+                                <p>
+                                    <strong>Tratamento de ruído em imagens</strong>                                
+                                    <br>
+                                    É possível reduzir drasticamente certos tipos de ruído utilizando características morfológicas das imagens.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 wow fadeInUp">
+                                <!-- About Us Text Start -->
+                                <div class="about_us_text ">
+                                    <h3><span>Design automático de operadores morfológicos</span></h3>
+                                    <p>Neste trabalho científico em conjunto com os grupos de <em>Visão Computacional</em> e de <em>Otimização Contínua</em> da <a href="http://www.ime.usp.br" target="_blank" class="normal">Universidade de São Paulo</a>, desenvolvemos a baste teórica e uma implementação de software para o design automático de operadores morfológicos para tratamento de ruído em imagens através de treino estatístico.</p>
+                                    <p>O artigo foi publicado no prestigioso <strong>IEEE Transactions on Image Processing</strong>, vol. 16, issue 2, pg. 453-462 (2007). O código fonte do software que faz o treinamento, bem como testes de validação cruzada estão disponíveis <a class="normal" target="_blank" href="http://www.vision.ime.usp.br/nonlinear/stackfd/">neste link</a>.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row"   id="pesquisa">
+                        <div class="col-xs-12 col-md-6 wow fadeInDown">
+                                <!-- About Us Text Start -->
+                                <div class="about_us_text ">
+                                    <h3><span>Pesquisa e desenvolvimento</span></h3>
+                                    <p>A busca incessante por conhecimento é fundamental para enfrentar os desafios de pesquisa operacional.</p>
+                                    <blockquote><p>Research is the process of going up alleys to see if they are blind.</p><footer><cite title="Marston Bates">Marston Bates</cite></footer></blockquote>
+                                    <p><strong>Histórico de pesquisa e desenvolvimento</strong></p>
+                                    <p>Há uma década nosso pessoal contribui na pesquisa de tópicos de matemática e ciência da computação em parceria com diversas universidades, como <a target="_blank" class="normal" href="http://www.ime.usp.br">USP</a>, a <a target="_blank" class="normal" href="http://www.mathcs.emory.edu">Emory University</a>, entre outras.</p>
+                                    <p>Somos engenheiros e doutores que gostam tanto de pesquisa básica quanto de pesquisa aplicada.</p>
+                                </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="about_us_thumb wow fadeInLeft" data-wow-delay="0.2s">
+                                <img src="img/bg-pattern/services/research.jpg" alt="">                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- >>>>>>>>>>>>>>>> Awesome Feature Area End <<<<<<<<<<<<<<<< -->
+    
+
+    <!-- >>>>>>>>>>>>>>>> Message Now Area Start <<<<<<<<<<<<<<<< -->
+    <section class="message_now_area gray_bg section_padding_100_40" id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Message Title -->
+                    <div class="message_title">
+                        <!-- Section Heading Start -->
+                        <div class="section_heading">
+                            <p>contato</p>
+                            <h3>Fale conosco</h3>
+                        </div>
+                    </div>
+
+                    <div class="contact_from">
+                        <form action="mail.php" method="post" id="main_contact_form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div id="success_fail_info"></div>
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Seu Nome *" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail *" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto *" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="number" id="number" placeholder="Telefone *" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Mensagem *" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-xs-12">
+                                        <button type="submit" class="btn btn-default">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <p>
+                        <h3>DotProduct</h3>
+                        <i class="icofont icofont-location-pin"></i>Av. Água Fria, 1535 - Sala 6 São Paulo - SP    02333-001 <a href="tel:98448-0600"><i class="icofont icofont-phone"></i>+55 11 98448-0600</a>
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div class="map_contact_address_area">        
+        <!-- Map Area Start -->
+        <div class="map_area" id="googleMap"></div>
+    </div>
+    <!-- >>>>>>>>>>>>>>>> Message Now Area end <<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>> Footer Area Start <<<<<<<<<<<<<<<< -->
+    <footer class="footer_area">
+        <!-- Bottom Footer Area Start -->
+        <div class="footer_bottom_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="social_links_area">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icofont icofont-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icofont icofont-twitter"></i></a>                            
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="icofont icofont-pinterest"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="icofont icofont-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer_bottom">
+                            <p>Todos os direitos reservados - DotProduct, 2015-2019.</p>
+                        </div>
+                        <!-- Bottom Footer Copywrite Text Area End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- >>>>>>>>>>>>>>>> Footer Area End <<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>> All jQuery Plugins <<<<<<<<<<<<<<<< -->
+
+    <!-- jQuery (necessary for all JavaScript plugins) -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Owl-carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Ajax Contact js -->
+    <script src="js/ajax-contact.js"></script>
+
+    <!-- Meanmenu js -->
+    <script src="js/meanmenu.js"></script>
+
+    <!-- Onepage Nav js -->
+    <script src="js/jquery.nav.min.js"></script>
+
+    <!-- Magnific Popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Back to top js -->
+    <script src="js/jquery.scrollUp.js"></script>
+
+    <!-- jQuery easing js -->
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <!-- WOW js -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- parallux js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- Footer Reveal js -->
+    <script src="js/footer-reveal.js"></script>
+
+    <!-- YouTube Video Player js -->
+    <script src="js/YTPlayer.min.js"></script>
+
+    <!-- GOOGLE MAPS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-9eigdbxbyW2YIjFIpWonAFVAJY2E4eA" type="text/javascript"></script>
+
+    <!-- GOOGLE ACTIVE JS -->
+    <script src="js/map-active.js"></script>
+
+    <!-- Bootstrap select -->
+    <script src="../bootstrap-select/js/bootstrap-select.min.js"></script>
+    
+
+    <!-- Active js -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
