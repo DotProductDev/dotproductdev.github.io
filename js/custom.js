@@ -167,6 +167,12 @@
 
     // Preloader active code
     $(window).on('load', function () {
+
+
+        var email = rot13("pbagngb") + "@" + rot13("qbgcebqhpg.pbz.oe");
+
+        $('#cnt').html('<a href="mailto:'+email+'">'+email+'</a>');
+
         $('.selectpicker').selectpicker();
 
         $('.selectpicker').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
@@ -191,6 +197,8 @@
         $('#preloader').fadeOut('slow', function () {
             $(this).remove();
         });
+
+
     });
 
 
